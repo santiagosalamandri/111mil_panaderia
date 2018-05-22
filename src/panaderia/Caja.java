@@ -44,12 +44,16 @@ public class Caja {
         this.cierreCaja = cierreCaja;
     }
     
-    public void agregarDinero(){
-        
+    public void agregarDinero(List<Dinero> pago){
+        for(int i=0; i<pago.size(); i++){
+            efectivo.add(pago.get(i));
+        }
     }
     
-    public void quitarDinero(){
-        
+    public void quitarDinero(List<Dinero> quitado){
+        for(int i=0; i<quitado.size(); i++){
+            efectivo.remove(quitado.get(i));
+        }
     }
     
     @Override
