@@ -61,4 +61,10 @@ public class TipoProducto {
     public void disminuirStock(float disminuir){
         stock -= disminuir;
     }
+    
+    public String toString (){
+        return "Nombre: "+nombre+" Precio Unitario: "+precioUnitario+" Unidad medida: "+unidadMedida;
+    }
+    
+    
 }
