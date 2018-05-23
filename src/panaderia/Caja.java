@@ -7,8 +7,6 @@ public class Caja {
     /*Atributos*/
     
     private List<Dinero> efectivo;
-    private float aperturaCaja;
-    private float cierreCaja;
     
     /*Constructor*/
     
@@ -26,22 +24,6 @@ public class Caja {
         this.efectivo = efectivo;
     }
     
-    public float getAperturaCaja(){
-        return aperturaCaja;
-    }
-    
-    public void setAperturaCaja(float aperturaCaja){
-        this.aperturaCaja = aperturaCaja;
-    }
-    
-    public float getCierreCaja(){
-        return cierreCaja;
-    }
-    
-    public void setCierreCaja(float cierreCaja){
-        this.cierreCaja = cierreCaja;
-    }
-    
     public void agregarDinero(List<Dinero> pago){
         for(int i=0; i<pago.size(); i++){
             efectivo.add(pago.get(i));
@@ -53,9 +35,16 @@ public class Caja {
             efectivo.remove(quitado.get(i));
         }
     }
+    public float calcularTotalEfectivo(List<Dinero> efectivo){
+        float totalEfectivo = 0;
+        for(int i=0; i<efectivo.size(); i++){
+            totalEfectivo = totalEfectivo + efectivo.get(i).getDenominacion();
+        }
+        return totalEfectivo;
+    }
     
     @Override
     public String toString(){
-        return "Caja { Efectivo = " + this.efectivo + ", AperturaCaja = " + this.aperturaCaja + ", CierreCaja = " + this.cierreCaja + " }";  
+        return "Caja { Efectivo = " + this.calcularTotalEfectivo(efectivo) +" }";  
     }
 }
