@@ -12,10 +12,10 @@ package panaderia;
 public class TipoProducto {
     private String nombre;
     private float precioUnitario;
-    private int unidadMedida;
+    private UnidadMedida unidadMedida;
     private float stock;
 
-    public TipoProducto(String nombre, float precioUnitario, int unidadMedida, float stock) {
+    public TipoProducto(String nombre, float precioUnitario, UnidadMedida unidadMedida, float stock) {
         this.nombre = nombre;
         this.precioUnitario = precioUnitario;
         this.unidadMedida = unidadMedida;
@@ -34,7 +34,7 @@ public class TipoProducto {
         return stock;
     }
 
-    public int getUnidadMedida() {
+    public UnidadMedida getUnidadMedida() {
         return unidadMedida;
     }
 
@@ -42,7 +42,7 @@ public class TipoProducto {
         this.precioUnitario = precioUnitario;
     }
     
-    public void setUnidadMedida(int unidadMedida) {
+    public void setUnidadMedida(UnidadMedida unidadMedida) {
         this.unidadMedida = unidadMedida;
     }
 
@@ -62,6 +62,7 @@ public class TipoProducto {
         stock -= disminuir;
     }
     
+    @Override
     public String toString (){
         return "Nombre: "+nombre+" Precio Unitario: "+precioUnitario+" Unidad medida: "+unidadMedida;
     }
