@@ -19,7 +19,7 @@ public class DetallePedido {
         this.tipoProducto = tipoProducto;
     }
     
-    public float calcularTotalDetalle (float cantidad, TipoProducto tipoProducto){
+    public float calcularTotalDetalle (){
         float subTotal=0;
         subTotal=(tipoProducto.getPrecioUnitario())*this.cantidad;
         return subTotal;
