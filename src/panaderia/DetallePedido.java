@@ -1,3 +1,5 @@
+package panaderia;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,7 +21,7 @@ public class DetallePedido {
     
     public float calcularTotalDetalle (float cantidad, TipoProducto tipoProducto){
         float subTotal=0;
-        subTotal=(tipoProducto.getPrecioUnitario())*this cantidad;
+        subTotal=(tipoProducto.getPrecioUnitario())*this.cantidad;
         return subTotal;
     }
 
