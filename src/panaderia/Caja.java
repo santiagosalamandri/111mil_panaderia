@@ -12,10 +12,8 @@ public class Caja {
     
     /*Constructor*/
     
-    public Caja(List<Dinero> efectivo, float aperturaCaja, float cierreCaja){
+    public Caja(List<Dinero> efectivo){
         this.efectivo = efectivo;
-        this.aperturaCaja = aperturaCaja;
-        this.cierreCaja = cierreCaja;
     }
     
     /*Metodos*/
