@@ -67,8 +67,8 @@ public class Factura {
        
        if(vuelto>500.0f){
            int contador500= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==500.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==500.0f){
                    contador500 ++;         
                } 
            }
@@ -78,8 +78,8 @@ public class Factura {
        }
        if(vuelto>200.0f){
            int contador200= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==200.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==200.0f){
                    contador200 ++;         
                } 
            }
@@ -88,8 +88,8 @@ public class Factura {
        
       if(vuelto>100.0f){
            int contador100= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==100.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==100.0f){
                    contador100 ++;         
                } 
            }
@@ -97,8 +97,8 @@ public class Factura {
        }
       if(vuelto>50.0f){
            int contador50= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==50.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==50.0f){
                    contador50++;         
                } 
            }
@@ -106,8 +106,8 @@ public class Factura {
        }
       if(vuelto>20.0f){
            int contador20= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==20.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==20.0f){
                    contador20++;         
                } 
            }
@@ -115,8 +115,8 @@ public class Factura {
        }
       if(vuelto>10.0f){
            int contador10= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==10.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==10.0f){
                    contador10++;         
                } 
            }
@@ -124,8 +124,8 @@ public class Factura {
        }
       if(vuelto>5.0f){
            int contador5= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==5.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==5.0f){
                    contador5++;         
                } 
            }
@@ -133,8 +133,8 @@ public class Factura {
        }
       if(vuelto>2.0f){
            int contador2= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==2.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==2.0f){
                    contador2 ++;         
                } 
            }
@@ -142,8 +142,8 @@ public class Factura {
        }
       if(vuelto>1.0f){
            int contador1= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==1.0f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==1.0f){
                    contador1 ++;         
                } 
            }
@@ -151,8 +151,8 @@ public class Factura {
        }
       if(vuelto>0.50f){
            int contador050= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==0.50f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==0.50f){
                    contador050 ++;         
                } 
            }
@@ -160,8 +160,8 @@ public class Factura {
        }
       if(vuelto>0.25f){
            int contador025= 0;
-           for(int i=0; i<caja.size(); i++){
-               if(caja.get(i)==0.25f){
+           for(int i=0; i<caja.getEfectivo().size(); i++){
+               if(caja.getEfectivo().get(i).getDenominacion()==0.25f){
                    contador025 ++;         
                } 
            }
